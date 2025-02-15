@@ -1,5 +1,9 @@
-abstract class Strings {
+class AppStrings {
+  AppStrings._();
+
   static const demo = "Demo";
 
-  static String demoTitle = "Demo Title";
+  static const home = "Home";
+  static const website = "Website";
+  static const social = "Social";
 }

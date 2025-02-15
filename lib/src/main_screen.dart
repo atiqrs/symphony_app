@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 
 import 'commons/resources/colors.dart';
+import 'commons/resources/dimens.dart';
+import 'commons/resources/strings.dart';
 import 'features/home_screen/home_screen.dart';
 import 'features/social_screen/social_screen.dart';
 import 'features/website_screen/website_screen.dart';
@@ -39,29 +41,40 @@ class MainScreenState extends State<MainScreen> {
             children: [
               _widgetOptions.elementAt(_selectedIndex),
               Positioned(
-                bottom: 0,
-                left: 0,
-                right: 0,
-                child: SizedBox(
-                  height: 100,
+                bottom: AppDimens.positionUnSign2,
+                left: AppDimens.position0,
+                right: AppDimens.position0,
+                child: Container(
+                  height: AppDimens.height100,
+                  decoration: BoxDecoration(
+                    color: AppColors.borderBackground,
+                    borderRadius: BorderRadius.only(
+                      topLeft: Radius.circular(AppDimens.radius32),
+                      topRight: Radius.circular(AppDimens.radius32),
+                    ),
+                    border: Border.all(
+                      width: AppDimens.spacing2,
+                      color: AppColors.borderBackground,
+                    ),
+                  ),
                   child: ClipRRect(
                     borderRadius: BorderRadius.only(
-                      topLeft: Radius.circular(25),
-                      topRight: Radius.circular(25),
+                      topLeft: Radius.circular(AppDimens.radius32),
+                      topRight: Radius.circular(AppDimens.radius32),
                     ),
                     child: BottomNavigationBar(
-                      items: const <BottomNavigationBarItem>[
+                      items: <BottomNavigationBarItem>[
                         BottomNavigationBarItem(
-                          icon: Icon(Icons.web, size: 24),
-                          label: 'Website',
+                          icon: Icon(Icons.web, size: AppDimens.size24),
+                          label: AppStrings.website,
                         ),
                         BottomNavigationBarItem(
-                          icon: Icon(Icons.home, size: 24),
-                          label: 'Home',
+                          icon: Icon(Icons.home, size: AppDimens.size24),
+                          label: AppStrings.home,
                         ),
                         BottomNavigationBarItem(
-                          icon: Icon(Icons.webhook, size: 24),
-                          label: 'Social',
+                          icon: Icon(Icons.webhook, size: AppDimens.size24),
+                          label: AppStrings.social,
                         ),
                       ],
                       currentIndex: _selectedIndex,

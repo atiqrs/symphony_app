@@ -1,5 +1,12 @@
-class Dimens {
-  Dimens._();
+class AppDimens {
+  AppDimens._();
+
+  static const spacing0 = 0.0;
+  static const spacing2 = 2.0;
+
+  static const size24 = 24.0;
+  static const size32 = 32.0;
+  static const size48 = 48.0;
 
   static const height44 = 44.0;
   static const height90 = 90.0;
@@ -16,6 +23,7 @@ class Dimens {
   static const height190 = 190.0;
   static const height200 = 200.0;
 
+  static const positionUnSign2 = -2.0;
   static const position0 = 0.0;
   static const position2 = 2.0;
   static const position4 = 4.0;
@@ -30,6 +38,8 @@ class Dimens {
   static const position200 = 200.0;
 
   static const radius8 = 8.0;
+  static const radius24 = 24.0;
+  static const radius32 = 32.0;
   static const radius100 = 100.0;
   static const radius120 = 120.0;
   static const radius150 = 150.0;
