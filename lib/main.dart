@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
+import 'src/app_router.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(MyApp());
 }
 
 class MyApp extends StatelessWidget {
@@ -10,37 +11,17 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: const RootPage(),
-    );
-  }
-}
-
-class RootPage extends StatefulWidget {
-  const RootPage({super.key});
-
-  @override
-  State<RootPage> createState() => _RootPageState();
-}
-
-class _RootPageState extends State<RootPage> {
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget>[
-            const Text(
-              'Here is a number:',
-            ),
-            Text(
-              '099009',
-              style: Theme.of(context).textTheme.headlineMedium,
-            ),
-          ],
-        ),
-      ),
+      themeMode: ThemeMode.system,
+      // theme: AppThemes.theme,
+      initialRoute: AppRouter.mainScreen,
+      onGenerateInitialRoutes: (initialRoute) {
+        return [
+          AppRouter.onGenerateRoute(
+            RouteSettings(name: initialRoute),
+          ),
+        ];
+      },
+      onGenerateRoute: AppRouter.onGenerateRoute,
     );
   }
 }
