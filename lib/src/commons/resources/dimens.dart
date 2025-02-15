@@ -8,6 +8,10 @@ class AppDimens {
   static const size32 = 32.0;
   static const size48 = 48.0;
 
+  static const iconSize24 = 24.0;
+  static const iconSize32 = 32.0;
+  static const iconSize48 = 48.0;
+
   static const height44 = 44.0;
   static const height90 = 90.0;
   static const height100 = 100.0;
@@ -43,4 +47,8 @@ class AppDimens {
   static const radius100 = 100.0;
   static const radius120 = 120.0;
   static const radius150 = 150.0;
+
+  static const fontSize14 = 14.0;
+  static const fontSize16 = 16.0;
+  static const fontSize18 = 18.0;
 }

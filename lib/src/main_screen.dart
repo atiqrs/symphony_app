@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 
+import 'commons/resources/assets.dart';
 import 'commons/resources/colors.dart';
 import 'commons/resources/dimens.dart';
 import 'commons/resources/strings.dart';
@@ -29,6 +31,25 @@ class MainScreenState extends State<MainScreen> {
     });
   }
 
+  TextStyle selectedLabelStyle = TextStyle(
+    color: AppColors.selectedTextColor,
+    fontWeight: FontWeight.w500,
+    fontSize: AppDimens.fontSize14,
+  );
+
+  TextStyle unselectedLabelStyle = TextStyle(
+    color: AppColors.unselectedTextColor,
+    fontWeight: FontWeight.w500,
+    fontSize: AppDimens.fontSize14,
+  );
+
+  ColorFilter? colorFilter(bool value) {
+    return ColorFilter.mode(
+      value ? AppColors.selectedIconRedColor : AppColors.unselectedIconColor,
+      BlendMode.srcIn,
+    );
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -47,14 +68,14 @@ class MainScreenState extends State<MainScreen> {
                 child: Container(
                   height: AppDimens.height100,
                   decoration: BoxDecoration(
-                    color: AppColors.borderBackground,
+                    color: AppColors.borderBackgroundColor,
                     borderRadius: BorderRadius.only(
                       topLeft: Radius.circular(AppDimens.radius32),
                       topRight: Radius.circular(AppDimens.radius32),
                     ),
                     border: Border.all(
                       width: AppDimens.spacing2,
-                      color: AppColors.borderBackground,
+                      color: AppColors.borderBackgroundColor,
                     ),
                   ),
                   child: ClipRRect(
@@ -65,22 +86,23 @@ class MainScreenState extends State<MainScreen> {
                     child: BottomNavigationBar(
                       items: <BottomNavigationBarItem>[
                         BottomNavigationBarItem(
-                          icon: Icon(Icons.web, size: AppDimens.size24),
+                          icon: SvgPicture.asset(AppAssets.iconWebsite, colorFilter: colorFilter(_selectedIndex == 0)),
                           label: AppStrings.website,
                         ),
                         BottomNavigationBarItem(
-                          icon: Icon(Icons.home, size: AppDimens.size24),
+                          icon: SvgPicture.asset(AppAssets.iconHome, colorFilter: colorFilter(_selectedIndex == 1)),
                           label: AppStrings.home,
                         ),
                         BottomNavigationBarItem(
-                          icon: Icon(Icons.webhook, size: AppDimens.size24),
+                          icon: SvgPicture.asset(AppAssets.iconSocial, colorFilter: colorFilter(_selectedIndex == 2)),
                           label: AppStrings.social,
                         ),
                       ],
                       currentIndex: _selectedIndex,
-                      backgroundColor: AppColors.cardBackground,
-                      selectedItemColor: Colors.red,
-                      unselectedItemColor: Colors.grey,
+                      backgroundColor: AppColors.cardBackgroundColor,
+                      selectedLabelStyle: selectedLabelStyle,
+                      unselectedLabelStyle: unselectedLabelStyle,
+                      useLegacyColorScheme: false,
                       onTap: _onItemTapped,
                     ),
                   ),
