@@ -25,6 +25,7 @@ class AppAssets {
   static const iconSimCard = '${_pathIcons}simcard.svg';
   static const iconSquareArrow = '${_pathIcons}square-arrow.svg';
   static const iconPattern = '${_pathIcons}pattern.svg';
+  static const iconMobile = '${_pathIcons}mobile.svg';
 
   /// Images
   static const imagePhoneSpec = '${_pathImages}phone-spec.png';

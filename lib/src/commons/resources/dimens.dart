@@ -26,6 +26,7 @@ class AppDimens {
   static const height40 = 40.0;
   static const height44 = 44.0;
   static const height90 = 90.0;
+  static const height92 = 92.0;
   static const height100 = 100.0;
   static const height102 = 102.0;
   static const height110 = 110.0;
@@ -77,6 +78,7 @@ class AppDimens {
 
   static const radius8 = 8.0;
   static const radius10 = 10.0;
+  static const radius12 = 12.0;
   static const radius16 = 16.0;
   static const radius24 = 24.0;
   static const radius32 = 32.0;
@@ -84,6 +86,7 @@ class AppDimens {
   static const radius120 = 120.0;
   static const radius150 = 150.0;
 
+  static const fontSize12 = 12.0;
   static const fontSize14 = 14.0;
   static const fontSize16 = 16.0;
   static const fontSize18 = 18.0;

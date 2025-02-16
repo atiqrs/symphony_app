@@ -7,6 +7,7 @@ class AppColors {
   static const blackBackgroundColor = Color.fromRGBO(0, 0, 0, 1);
   static const whiteBackgroundColor = Color.fromRGBO(255, 255, 255, 1);
   static const cardBackgroundColor = Color.fromRGBO(24, 24, 24, 1);
+  static const cardSecondaryBackgroundColor = Color.fromRGBO(31, 32, 34, 1);
   static const borderColor = Color.fromRGBO(45, 45, 46, 1);
   static const borderLightColor = Color.fromRGBO(113, 115, 117, 1);
   static const borderWhiteColor = Color.fromRGBO(232, 238, 246, 1);
@@ -23,6 +24,7 @@ class AppColors {
   static const whiteTextColor = Color.fromRGBO(255, 255, 255, 1);
   static const selectedTextColor = Color.fromRGBO(255, 255, 255, 1);
   static Color unselectedTextColor = Color.fromRGBO(255, 255, 255, 0.4);
+  static Color grayTextColor = Color.fromRGBO(255, 255, 255, 0.6);
 
   static const testBackground = Color.fromRGBO(36, 122, 18, 1.0);
 }
