@@ -13,18 +13,21 @@ class AppDimens {
 
   static const size24 = 24.0;
   static const size32 = 32.0;
+  static const size34 = 34.0;
   static const size48 = 48.0;
 
   static const iconSize24 = 24.0;
   static const iconSize32 = 32.0;
   static const iconSize48 = 48.0;
 
+  static const height40 = 40.0;
   static const height44 = 44.0;
   static const height90 = 90.0;
   static const height100 = 100.0;
   static const height102 = 102.0;
   static const height110 = 110.0;
   static const height120 = 120.0;
+  static const height128 = 128.0;
   static const height130 = 130.0;
   static const height140 = 140.0;
   static const height150 = 150.0;

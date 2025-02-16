@@ -9,4 +9,7 @@ class AppStrings {
 
   static const homeTitle = "My Symphony";
 
+  static const needHelpText = "Need Help?";
+  static const checkSupportText = "Check Support";
+
 }
