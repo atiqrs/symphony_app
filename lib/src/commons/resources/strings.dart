@@ -1,7 +1,8 @@
 class AppStrings {
   AppStrings._();
 
-  static const demo = "Demo";
+  static const title = "title";
+  static const image = "image";
 
   static const home = "Home";
   static const website = "Website";
@@ -12,4 +13,5 @@ class AppStrings {
   static const needHelpText = "Need Help?";
   static const checkSupportText = "Check Support";
 
+  static const trendingItemsText = "Trending items";
 }

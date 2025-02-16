@@ -5,8 +5,11 @@ import 'package:symphony_app/src/commons/resources/strings.dart';
 import '../../commons/resources/assets.dart';
 import '../../commons/resources/colors.dart';
 import '../../commons/resources/dimens.dart';
+import '../../dev_utils/mock_data/mock_trending_list_data.dart';
+import 'data/model/trending_model.dart';
 import 'widgets/need_help_card_widget.dart';
 import 'widgets/rounded_image_widget.dart';
+import 'widgets/trending_list_widget.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -85,6 +88,9 @@ class _HomeScreenState extends State<HomeScreen> {
                 ),
               ),
               SizedBox(height: AppDimens.spacing24),
+
+              /// portrait list items
+              TrendingItemsWidget(trendingModel: TrendingListModel(items: trendingItemList)),
             ],
           ),
         ),

@@ -27,6 +27,7 @@ class AppDimens {
   static const height102 = 102.0;
   static const height110 = 110.0;
   static const height120 = 120.0;
+  static const height126 = 126.0;
   static const height128 = 128.0;
   static const height130 = 130.0;
   static const height140 = 140.0;
@@ -36,6 +37,25 @@ class AppDimens {
   static const height180 = 180.0;
   static const height190 = 190.0;
   static const height200 = 200.0;
+
+  static const width40 = 40.0;
+  static const width44 = 44.0;
+  static const width90 = 90.0;
+  static const width100 = 100.0;
+  static const width102 = 102.0;
+  static const width110 = 110.0;
+  static const width120 = 120.0;
+  static const width126 = 126.0;
+  static const width128 = 128.0;
+  static const width130 = 130.0;
+  static const width140 = 140.0;
+  static const width150 = 150.0;
+  static const width160 = 160.0;
+  static const width170 = 170.0;
+  static const width180 = 180.0;
+  static const width190 = 190.0;
+  static const width200 = 200.0;
+  static const width344 = 344.0;
 
   static const positionUnSign2 = -2.0;
   static const position0 = 0.0;
@@ -62,4 +82,5 @@ class AppDimens {
   static const fontSize14 = 14.0;
   static const fontSize16 = 16.0;
   static const fontSize18 = 18.0;
+  static const fontSize20 = 20.0;
 }

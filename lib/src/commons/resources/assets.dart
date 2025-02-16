@@ -28,6 +28,9 @@ class AppAssets {
 
   /// Images
   static const imagePhoneSpec = '${_pathImages}phone-spec.png';
+  static const imagePhone = '${_pathImages}phone.png';
+  static const imageWatch = '${_pathImages}watch.png';
+  static const imageTypeC = '${_pathImages}type-c.png';
 
   /// GIF
   static const gifDemo = '${_pathGif}demo.gif';
