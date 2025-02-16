@@ -68,14 +68,14 @@ class MainScreenState extends State<MainScreen> {
                 child: Container(
                   height: AppDimens.height100,
                   decoration: BoxDecoration(
-                    color: AppColors.borderBackgroundColor,
+                    color: AppColors.borderColor,
                     borderRadius: BorderRadius.only(
                       topLeft: Radius.circular(AppDimens.radius32),
                       topRight: Radius.circular(AppDimens.radius32),
                     ),
                     border: Border.all(
                       width: AppDimens.spacing2,
-                      color: AppColors.borderBackgroundColor,
+                      color: AppColors.borderColor,
                     ),
                   ),
                   child: ClipRRect(

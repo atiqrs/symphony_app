@@ -26,7 +26,7 @@ class AppAssets {
   static const iconSquareArrow = '${_pathIcons}square-arrow.svg';
 
   /// Images
-  static const imageDemo = '${_pathImages}demo.png';
+  static const imagePhoneSpec = '${_pathImages}phone-spec.png';
 
   /// GIF
   static const gifDemo = '${_pathGif}demo.gif';

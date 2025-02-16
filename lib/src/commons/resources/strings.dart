@@ -6,4 +6,7 @@ class AppStrings {
   static const home = "Home";
   static const website = "Website";
   static const social = "Social";
+
+  static const homeTitle = "My Symphony";
+
 }
