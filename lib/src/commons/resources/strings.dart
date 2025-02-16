@@ -14,4 +14,5 @@ class AppStrings {
   static const checkSupportText = "Check Support";
 
   static const trendingItemsText = "Trending items";
+  static const entertainmentItemsText = "Entertainment";
 }

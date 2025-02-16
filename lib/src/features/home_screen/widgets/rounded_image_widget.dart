@@ -8,6 +8,7 @@ class BorderedImageWidget extends StatelessWidget {
   final double? width;
   final BoxFit? fit;
   final double borderWidth;
+  final bool showBorder;
 
   const BorderedImageWidget({
     super.key,
@@ -17,6 +18,7 @@ class BorderedImageWidget extends StatelessWidget {
     this.width,
     this.fit,
     this.borderWidth = 0.5,
+    this.showBorder = true,
   });
 
   @override
@@ -44,15 +46,16 @@ class BorderedImageWidget extends StatelessWidget {
           ),
 
           /// Border Overlay
-          Container(
-            decoration: BoxDecoration(
-              borderRadius: BorderRadius.circular(borderRadius),
-              border: Border.all(
-                color: AppColors.borderLightColor,
-                width: borderWidth,
+          if (showBorder)
+            Container(
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(borderRadius),
+                border: Border.all(
+                  color: AppColors.borderLightColor,
+                  width: borderWidth,
+                ),
               ),
             ),
-          ),
         ],
       ),
     );

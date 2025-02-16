@@ -31,6 +31,7 @@ class AppAssets {
   static const imagePhone = '${_pathImages}phone.png';
   static const imageWatch = '${_pathImages}watch.png';
   static const imageTypeC = '${_pathImages}type-c.png';
+  static const imageEntertainOne = '${_pathImages}entertain_one.png';
 
   /// GIF
   static const gifDemo = '${_pathGif}demo.gif';

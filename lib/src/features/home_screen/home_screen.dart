@@ -7,6 +7,7 @@ import '../../commons/resources/dimens.dart';
 import '../../commons/resources/strings.dart';
 import '../../dev_utils/mock_data/mock_trending_list_data.dart';
 import 'data/model/trending_model.dart';
+import 'widgets/entertainment_widget.dart';
 import 'widgets/need_help_card_widget.dart';
 import 'widgets/rounded_image_widget.dart';
 import 'widgets/trending_list_widget.dart';
@@ -91,6 +92,13 @@ class _HomeScreenState extends State<HomeScreen> {
 
               /// portrait list items
               TrendingItemsWidget(trendingModel: TrendingListModel(items: trendingItemList)),
+              SizedBox(height: AppDimens.spacing24),
+
+              /// entertainment section
+              EntertainmentWidget(imageUrl: AppAssets.imageEntertainOne),
+              SizedBox(height: AppDimens.spacing24),
+
+              SizedBox(height: AppDimens.spacing100),
             ],
           ),
         ),
