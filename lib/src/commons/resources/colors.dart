@@ -9,6 +9,7 @@ class AppColors {
   static const cardBackgroundColor = Color.fromRGBO(24, 24, 24, 1);
   static const borderColor = Color.fromRGBO(45, 45, 46, 1);
   static const borderLightColor = Color.fromRGBO(113, 115, 117, 1);
+  static const borderWhiteColor = Color.fromRGBO(232, 238, 246, 1);
 
   static const blackColor = Color.fromRGBO(0, 0, 0, 1);
   static const whiteColor = Color.fromRGBO(255, 255, 255, 1);

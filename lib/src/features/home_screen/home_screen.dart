@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:symphony_app/src/commons/resources/strings.dart';
 
 import '../../commons/resources/assets.dart';
 import '../../commons/resources/colors.dart';
 import '../../commons/resources/dimens.dart';
+import '../../commons/resources/strings.dart';
 import '../../dev_utils/mock_data/mock_trending_list_data.dart';
 import 'data/model/trending_model.dart';
 import 'widgets/need_help_card_widget.dart';

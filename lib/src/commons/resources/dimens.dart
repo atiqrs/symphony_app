@@ -6,7 +6,9 @@ class AppDimens {
   static const spacing2 = 2.0;
   static const spacing4 = 4.0;
   static const spacing8 = 8.0;
+  static const spacing10 = 10.0;
   static const spacing12 = 12.0;
+  static const spacing14 = 14.0;
   static const spacing16 = 16.0;
   static const spacing18 = 18.0;
   static const spacing24 = 24.0;
@@ -43,6 +45,7 @@ class AppDimens {
   static const width90 = 90.0;
   static const width100 = 100.0;
   static const width102 = 102.0;
+  static const width104 = 104.0;
   static const width110 = 110.0;
   static const width120 = 120.0;
   static const width126 = 126.0;
@@ -72,6 +75,7 @@ class AppDimens {
   static const position200 = 200.0;
 
   static const radius8 = 8.0;
+  static const radius10 = 10.0;
   static const radius16 = 16.0;
   static const radius24 = 24.0;
   static const radius32 = 32.0;
