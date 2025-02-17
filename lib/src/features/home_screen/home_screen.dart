@@ -65,7 +65,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 width: double.infinity,
                 borderRadius: AppDimens.radius16,
                 borderWidth: AppDimens.spacing1,
-                fit: BoxFit.contain,
+                fit: BoxFit.fill,
               ),
               SizedBox(height: AppDimens.spacing24),
 

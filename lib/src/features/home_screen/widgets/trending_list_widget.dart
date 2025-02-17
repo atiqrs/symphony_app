@@ -32,11 +32,7 @@ class TrendingItemsWidget extends StatelessWidget {
             scrollDirection: Axis.horizontal,
             itemCount: trendingModel.items.length,
             itemBuilder: (context, index) {
-              return SizedBox(
-                height: AppDimens.height126,
-                width: AppDimens.width104,
-                child: portraitTrendingCard(item: trendingModel.items[index]),
-              );
+              return portraitTrendingCard(item: trendingModel.items[index]);
             },
           ),
         ),
