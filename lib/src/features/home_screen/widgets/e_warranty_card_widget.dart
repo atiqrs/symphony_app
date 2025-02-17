@@ -19,11 +19,8 @@ class EWarrantyCardWidget extends StatelessWidget {
       children: [
         Text(
           AppStrings.eWarrantyCardItemsText,
-          style: TextStyle(
-            fontSize: AppDimens.fontSize20,
-            fontWeight: FontWeight.bold,
-            color: AppColors.blackTextColor,
-          ),
+          style:
+              TextStyle(fontSize: AppDimens.fontSize20, fontWeight: FontWeight.bold, color: AppColors.blackTextColor),
         ),
         SizedBox(height: AppDimens.spacing16),
         ClipRRect(
@@ -35,7 +32,45 @@ class EWarrantyCardWidget extends StatelessWidget {
             color: AppColors.cardSecondaryBackgroundColor,
             child: Row(
               children: [
-                SvgPicture.asset(AppAssets.iconMobile),
+                /// mobile image + circle camera box + device model name
+                Stack(
+                  children: [
+                    SvgPicture.asset(AppAssets.iconMobile),
+                    Positioned(
+                      left: AppDimens.position0,
+                      right: AppDimens.position0,
+                      top: AppDimens.position2,
+                      child: Center(
+                        child: Container(
+                          height: AppDimens.size3,
+                          width: AppDimens.size3,
+                          decoration: BoxDecoration(
+                            color: AppColors.cardSecondaryBackgroundColor,
+                            borderRadius: BorderRadius.circular(AppDimens.radius10),
+                            border:
+                                Border.all(color: AppColors.cardSecondaryBackgroundColor, width: AppDimens.spacing1),
+                          ),
+                        ),
+                      ),
+                    ),
+                    Positioned(
+                      left: AppDimens.position0,
+                      right: AppDimens.position0,
+                      top: AppDimens.position0,
+                      bottom: AppDimens.position0,
+                      child: Center(
+                        child: Text(
+                          model.deviceModel,
+                          style: TextStyle(
+                            fontSize: AppDimens.fontSize8,
+                            fontWeight: FontWeight.w800,
+                            color: AppColors.whiteTextColor,
+                          ),
+                        ),
+                      ),
+                    )
+                  ],
+                ),
                 SizedBox(width: AppDimens.spacing16),
                 Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
@@ -44,30 +79,25 @@ class EWarrantyCardWidget extends StatelessWidget {
                     Text(
                       model.mobileModel,
                       style: TextStyle(
-                        fontSize: AppDimens.fontSize16,
-                        fontWeight: FontWeight.w700,
-                        color: AppColors.whiteTextColor,
-                      ),
+                          fontSize: AppDimens.fontSize16, fontWeight: FontWeight.w700, color: AppColors.whiteTextColor),
                     ),
                     Text(
                       AppStrings.validForDaysText(model.remainingDays),
-                      style: TextStyle(
-                        fontSize: AppDimens.fontSize12,
-                        color: AppColors.grayTextColor,
-                      ),
+                      style: TextStyle(fontSize: AppDimens.fontSize12, color: AppColors.grayTextColor),
                     ),
                     Text(
                       AppStrings.expiryDateText + model.expiryDate,
-                      style: TextStyle(
-                        fontSize: AppDimens.fontSize12,
-                        color: AppColors.grayTextColor,
-                      ),
+                      style: TextStyle(fontSize: AppDimens.fontSize12, color: AppColors.grayTextColor),
                     ),
                   ],
                 ),
                 Spacer(),
+
+                /// go to next arrow button
                 IconButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    // TODO: go to e-warranty next page implementation
+                  },
                   icon: Center(
                     child: SvgPicture.asset(AppAssets.iconArrowRightBack),
                   ),

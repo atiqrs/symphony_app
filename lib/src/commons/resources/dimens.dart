@@ -14,6 +14,7 @@ class AppDimens {
   static const spacing24 = 24.0;
   static const spacing100 = 100.0;
 
+  static const size3 = 3.0;
   static const size24 = 24.0;
   static const size32 = 32.0;
   static const size34 = 34.0;
@@ -86,6 +87,7 @@ class AppDimens {
   static const radius120 = 120.0;
   static const radius150 = 150.0;
 
+  static const fontSize8 = 8.0;
   static const fontSize12 = 12.0;
   static const fontSize14 = 14.0;
   static const fontSize16 = 16.0;
