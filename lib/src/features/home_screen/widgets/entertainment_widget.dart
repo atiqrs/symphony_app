@@ -18,7 +18,7 @@ class EntertainmentWidget extends StatelessWidget {
         Text(
           AppStrings.entertainmentItemsText,
           style: TextStyle(
-            fontSize: AppDimens.fontSize20,
+            fontSize: AppDimens.textSize20,
             fontWeight: FontWeight.bold,
             color: AppColors.blackTextColor,
           ),

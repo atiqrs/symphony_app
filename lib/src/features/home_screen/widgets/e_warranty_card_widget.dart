@@ -20,7 +20,7 @@ class EWarrantyCardWidget extends StatelessWidget {
         Text(
           AppStrings.eWarrantyCardItemsText,
           style:
-              TextStyle(fontSize: AppDimens.fontSize20, fontWeight: FontWeight.bold, color: AppColors.blackTextColor),
+              TextStyle(fontSize: AppDimens.textSize20, fontWeight: FontWeight.bold, color: AppColors.blackTextColor),
         ),
         SizedBox(height: AppDimens.spacing16),
         ClipRRect(
@@ -64,7 +64,7 @@ class EWarrantyCardWidget extends StatelessWidget {
                         child: Text(
                           model.deviceModel,
                           style: TextStyle(
-                            fontSize: AppDimens.fontSize8,
+                            fontSize: AppDimens.textSize8,
                             fontWeight: FontWeight.w800,
                             color: AppColors.whiteTextColor,
                           ),
@@ -81,15 +81,15 @@ class EWarrantyCardWidget extends StatelessWidget {
                     Text(
                       model.mobileModel,
                       style: TextStyle(
-                          fontSize: AppDimens.fontSize16, fontWeight: FontWeight.w700, color: AppColors.whiteTextColor),
+                          fontSize: AppDimens.textSize16, fontWeight: FontWeight.w700, color: AppColors.whiteTextColor),
                     ),
                     Text(
                       AppStrings.validForDaysText(model.remainingDays),
-                      style: TextStyle(fontSize: AppDimens.fontSize12, color: AppColors.grayTextColor),
+                      style: TextStyle(fontSize: AppDimens.textSize12, color: AppColors.grayTextColor),
                     ),
                     Text(
                       AppStrings.expiryDateText + model.expiryDate,
-                      style: TextStyle(fontSize: AppDimens.fontSize12, color: AppColors.grayTextColor),
+                      style: TextStyle(fontSize: AppDimens.textSize12, color: AppColors.grayTextColor),
                     ),
                   ],
                 ),

@@ -34,7 +34,7 @@ class SocialCommunityWidget extends StatelessWidget {
               child: Text(
                 AppStrings.joinSocialCommunityText,
                 style: TextStyle(
-                  fontSize: AppDimens.fontSize20,
+                  fontSize: AppDimens.textSize20,
                   fontWeight: FontWeight.w600,
                   color: AppColors.whiteTextColor,
                 ),

@@ -43,7 +43,7 @@ class _HomeScreenState extends State<HomeScreen> {
                   Text(
                     AppStrings.homeTitle,
                     style: TextStyle(
-                        color: AppColors.blackTextColor, fontWeight: FontWeight.w700, fontSize: AppDimens.fontSize18),
+                        color: AppColors.blackTextColor, fontWeight: FontWeight.w700, fontSize: AppDimens.textSize18),
                   ),
                   IconButton(
                     onPressed: () {
@@ -87,7 +87,7 @@ class _HomeScreenState extends State<HomeScreen> {
                         style: TextStyle(
                           color: AppColors.blackTextColor,
                           fontWeight: FontWeight.w500,
-                          fontSize: AppDimens.fontSize16,
+                          fontSize: AppDimens.textSize16,
                         ),
                       ),
                     ),

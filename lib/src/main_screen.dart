@@ -34,13 +34,13 @@ class MainScreenState extends State<MainScreen> {
   TextStyle selectedLabelStyle = TextStyle(
     color: AppColors.selectedTextColor,
     fontWeight: FontWeight.w500,
-    fontSize: AppDimens.fontSize14,
+    fontSize: AppDimens.textSize14,
   );
 
   TextStyle unselectedLabelStyle = TextStyle(
     color: AppColors.unselectedTextColor,
     fontWeight: FontWeight.w500,
-    fontSize: AppDimens.fontSize14,
+    fontSize: AppDimens.textSize14,
   );
 
   ColorFilter? colorFilter(bool value) {

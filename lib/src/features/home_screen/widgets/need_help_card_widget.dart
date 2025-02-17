@@ -42,7 +42,7 @@ class NeedHelpCardWidget extends StatelessWidget {
                   style: TextStyle(
                     color: AppColors.whiteTextColor,
                     fontWeight: FontWeight.w600,
-                    fontSize: AppDimens.fontSize16,
+                    fontSize: AppDimens.textSize16,
                   ),
                 ),
                 Spacer(),

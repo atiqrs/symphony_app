@@ -19,7 +19,7 @@ class TrendingItemsWidget extends StatelessWidget {
         Text(
           AppStrings.trendingItemsText,
           style: TextStyle(
-            fontSize: AppDimens.fontSize20,
+            fontSize: AppDimens.textSize20,
             fontWeight: FontWeight.bold,
             color: AppColors.blackTextColor,
           ),

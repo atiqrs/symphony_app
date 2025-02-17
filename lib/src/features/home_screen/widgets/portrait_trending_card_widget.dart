@@ -23,7 +23,7 @@ Widget portraitTrendingCard({required TrendingItemModel item}) {
               Text(
                 item.title,
                 overflow: TextOverflow.ellipsis,
-                style: TextStyle(fontSize: AppDimens.fontSize14, fontWeight: FontWeight.w600),
+                style: TextStyle(fontSize: AppDimens.textSize14, fontWeight: FontWeight.w600),
               ),
               SizedBox(height: AppDimens.spacing10),
               Expanded(child: Image.asset(item.imageUrl, width: double.infinity, fit: BoxFit.fill)),

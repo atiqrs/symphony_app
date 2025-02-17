@@ -24,7 +24,7 @@ class GamingItemsWidget extends StatelessWidget {
             Text(
               AppStrings.gameText,
               style: TextStyle(
-                fontSize: AppDimens.fontSize20,
+                fontSize: AppDimens.textSize20,
                 fontWeight: FontWeight.bold,
                 color: AppColors.blackTextColor,
               ),
@@ -40,7 +40,7 @@ class GamingItemsWidget extends StatelessWidget {
                   Text(
                     AppStrings.seeMoreText,
                     style: TextStyle(
-                      fontSize: AppDimens.fontSize14,
+                      fontSize: AppDimens.textSize14,
                       fontWeight: FontWeight.w700,
                       color: AppColors.redColor,
                     ),
