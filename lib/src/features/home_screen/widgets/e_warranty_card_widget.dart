@@ -106,7 +106,6 @@ class EWarrantyCardWidget extends StatelessWidget {
             ),
           ),
         ),
-        const SizedBox(height: AppDimens.spacing24),
       ],
     );
   }

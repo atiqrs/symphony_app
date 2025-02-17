@@ -15,6 +15,7 @@ import 'widgets/entertainment_widget.dart';
 import 'widgets/game_list_widget.dart';
 import 'widgets/need_help_card_widget.dart';
 import 'widgets/rounded_image_widget.dart';
+import 'widgets/social_community_widget.dart';
 import 'widgets/trending_list_widget.dart';
 
 class HomeScreen extends StatefulWidget {
@@ -111,6 +112,8 @@ class _HomeScreenState extends State<HomeScreen> {
               GamingItemsWidget(gameListModel: GamingListModel(items: gamingListMockModel)),
               SizedBox(height: AppDimens.spacing24),
 
+              /// join social community card
+              SocialCommunityWidget(),
               SizedBox(height: AppDimens.spacing100),
             ],
           ),

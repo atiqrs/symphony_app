@@ -19,6 +19,7 @@ class AppStrings {
   static const entertainmentItemsText = "Entertainment";
   static const eWarrantyCardItemsText = "E-warranty card";
   static const gameText = "Games";
+  static const joinSocialCommunityText = "JOIN SOCIAL COMMUNITY";
 
   /// warranty demo text
   static const deviceModelText = "Helio";
