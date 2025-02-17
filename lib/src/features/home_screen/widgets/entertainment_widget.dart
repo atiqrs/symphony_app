@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 
-import '../../../commons/resources/colors.dart';
 import '../../../commons/resources/dimens.dart';
 import '../../../commons/resources/strings.dart';
+import '../../../commons/resources/styles.dart';
 import 'rounded_image_widget.dart';
 
 class EntertainmentWidget extends StatelessWidget {
@@ -17,11 +17,7 @@ class EntertainmentWidget extends StatelessWidget {
       children: [
         Text(
           AppStrings.entertainmentItemsText,
-          style: TextStyle(
-            fontSize: AppDimens.textSize20,
-            fontWeight: FontWeight.bold,
-            color: AppColors.blackTextColor,
-          ),
+          style: AppStyles.black20BoldTextStyle,
         ),
         SizedBox(height: AppDimens.spacing16),
         BorderedImageWidget(

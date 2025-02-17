@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:symphony_app/src/commons/resources/assets.dart';
-import 'package:symphony_app/src/commons/resources/colors.dart';
-import 'package:symphony_app/src/commons/resources/dimens.dart';
 
+import '../../../commons/resources/assets.dart';
+import '../../../commons/resources/colors.dart';
+import '../../../commons/resources/dimens.dart';
 import '../../../commons/resources/strings.dart';
+import '../../../commons/resources/styles.dart';
 
 class NeedHelpCardWidget extends StatelessWidget {
   final Widget widget;
@@ -39,11 +40,7 @@ class NeedHelpCardWidget extends StatelessWidget {
                 SizedBox(width: AppDimens.spacing16),
                 Text(
                   AppStrings.needHelpText,
-                  style: TextStyle(
-                    color: AppColors.whiteTextColor,
-                    fontWeight: FontWeight.w600,
-                    fontSize: AppDimens.textSize16,
-                  ),
+                  style: AppStyles.white16W600TextStyle,
                 ),
                 Spacer(),
                 widget,

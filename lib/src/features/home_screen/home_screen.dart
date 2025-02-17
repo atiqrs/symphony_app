@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
+import '../../commons/resources/styles.dart';
 import '../../commons/resources/assets.dart';
 import '../../commons/resources/colors.dart';
 import '../../commons/resources/dimens.dart';
@@ -42,8 +43,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 children: [
                   Text(
                     AppStrings.homeTitle,
-                    style: TextStyle(
-                        color: AppColors.blackTextColor, fontWeight: FontWeight.w700, fontSize: AppDimens.textSize18),
+                    style: AppStyles.black18W700TextStyle,
                   ),
                   IconButton(
                     onPressed: () {
@@ -82,14 +82,7 @@ class _HomeScreenState extends State<HomeScreen> {
                       height: AppDimens.height40,
                       color: AppColors.whiteColor,
                       alignment: Alignment.center,
-                      child: Text(
-                        AppStrings.checkSupportText,
-                        style: TextStyle(
-                          color: AppColors.blackTextColor,
-                          fontWeight: FontWeight.w500,
-                          fontSize: AppDimens.textSize16,
-                        ),
-                      ),
+                      child: Text(AppStrings.checkSupportText, style: AppStyles.black16W500TextStyle),
                     ),
                   ),
                 ),

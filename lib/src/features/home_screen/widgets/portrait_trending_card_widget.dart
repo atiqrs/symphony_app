@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import '../../../commons/resources/styles.dart';
 import '../../../commons/resources/colors.dart';
 import '../../../commons/resources/dimens.dart';
 import '../data/model/trending_model.dart';
@@ -23,7 +24,7 @@ Widget portraitTrendingCard({required TrendingItemModel item}) {
               Text(
                 item.title,
                 overflow: TextOverflow.ellipsis,
-                style: TextStyle(fontSize: AppDimens.textSize14, fontWeight: FontWeight.w600),
+                style: AppStyles.blackSecondary14W600TextStyle,
               ),
               SizedBox(height: AppDimens.spacing10),
               Expanded(child: Image.asset(item.imageUrl, width: double.infinity, fit: BoxFit.fill)),

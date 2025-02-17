@@ -15,12 +15,14 @@ class AppColors {
   static const blackColor = Color.fromRGBO(0, 0, 0, 1);
   static const whiteColor = Color.fromRGBO(255, 255, 255, 1);
   static const redColor = Color.fromRGBO(255, 44, 44, 1);
+  static const redDimColor = Color.fromRGBO(255, 44, 44, .15);
 
   static Color selectedIconRedColor = Color.fromRGBO(255, 0, 43, 1);
   static const unselectedIconColor = Color.fromRGBO(255, 255, 255, 0.4);
 
   /// Text Colors
   static const blackTextColor = Color.fromRGBO(0, 0, 0, 1);
+  static const blackSecondaryTextColor = Color.fromRGBO(26, 26, 26, 1);
   static const whiteTextColor = Color.fromRGBO(255, 255, 255, 1);
   static const selectedTextColor = Color.fromRGBO(255, 255, 255, 1);
   static Color unselectedTextColor = Color.fromRGBO(255, 255, 255, 0.4);

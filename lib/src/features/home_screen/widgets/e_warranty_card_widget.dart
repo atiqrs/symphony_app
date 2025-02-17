@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
+import '../../../commons/resources/styles.dart';
 import '../../../commons/resources/assets.dart';
 import '../../../commons/resources/colors.dart';
 import '../../../commons/resources/dimens.dart';
@@ -19,8 +20,7 @@ class EWarrantyCardWidget extends StatelessWidget {
       children: [
         Text(
           AppStrings.eWarrantyCardItemsText,
-          style:
-              TextStyle(fontSize: AppDimens.textSize20, fontWeight: FontWeight.bold, color: AppColors.blackTextColor),
+          style: AppStyles.black20BoldTextStyle,
         ),
         SizedBox(height: AppDimens.spacing16),
         ClipRRect(
@@ -63,11 +63,7 @@ class EWarrantyCardWidget extends StatelessWidget {
                       child: Center(
                         child: Text(
                           model.deviceModel,
-                          style: TextStyle(
-                            fontSize: AppDimens.textSize8,
-                            fontWeight: FontWeight.w800,
-                            color: AppColors.whiteTextColor,
-                          ),
+                          style: AppStyles.white8W800TextStyle,
                         ),
                       ),
                     )
@@ -80,16 +76,15 @@ class EWarrantyCardWidget extends StatelessWidget {
                   children: [
                     Text(
                       model.mobileModel,
-                      style: TextStyle(
-                          fontSize: AppDimens.textSize16, fontWeight: FontWeight.w700, color: AppColors.whiteTextColor),
+                      style: AppStyles.white12W700TextStyle,
                     ),
                     Text(
                       AppStrings.validForDaysText(model.remainingDays),
-                      style: TextStyle(fontSize: AppDimens.textSize12, color: AppColors.grayTextColor),
+                      style: AppStyles.gray12TextStyle,
                     ),
                     Text(
                       AppStrings.expiryDateText + model.expiryDate,
-                      style: TextStyle(fontSize: AppDimens.textSize12, color: AppColors.grayTextColor),
+                      style: AppStyles.gray12TextStyle,
                     ),
                   ],
                 ),
