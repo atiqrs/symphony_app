@@ -5,6 +5,7 @@ import '../../../commons/resources/assets.dart';
 import '../../../commons/resources/colors.dart';
 import '../../../commons/resources/dimens.dart';
 import '../../../commons/resources/strings.dart';
+import '../../../commons/resources/styles.dart';
 import '../data/model/gaming_model.dart';
 import 'rounded_image_widget.dart';
 
@@ -23,11 +24,7 @@ class GamingItemsWidget extends StatelessWidget {
           children: [
             Text(
               AppStrings.gameText,
-              style: TextStyle(
-                fontSize: AppDimens.fontSize20,
-                fontWeight: FontWeight.bold,
-                color: AppColors.blackTextColor,
-              ),
+              style: AppStyles.black20BoldTextStyle,
             ),
             IconButton(
               onPressed: () {
@@ -39,11 +36,7 @@ class GamingItemsWidget extends StatelessWidget {
                 children: [
                   Text(
                     AppStrings.seeMoreText,
-                    style: TextStyle(
-                      fontSize: AppDimens.fontSize14,
-                      fontWeight: FontWeight.w700,
-                      color: AppColors.redColor,
-                    ),
+                    style: AppStyles.red14W700TextStyle,
                   ),
                   SizedBox(width: AppDimens.spacing8),
                   SvgPicture.asset(

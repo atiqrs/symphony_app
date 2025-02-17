@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:symphony_app/src/commons/resources/assets.dart';
 
-import '../../../commons/resources/colors.dart';
+import '../../../commons/resources/assets.dart';
+import '../../../commons/resources/styles.dart';
 import '../../../commons/resources/dimens.dart';
 import '../../../commons/resources/strings.dart';
 import 'rounded_image_widget.dart';
@@ -33,11 +33,7 @@ class SocialCommunityWidget extends StatelessWidget {
             child: Center(
               child: Text(
                 AppStrings.joinSocialCommunityText,
-                style: TextStyle(
-                  fontSize: AppDimens.fontSize20,
-                  fontWeight: FontWeight.w600,
-                  color: AppColors.whiteTextColor,
-                ),
+                style: AppStyles.white20W600TextStyle,
               ),
             ),
           ),

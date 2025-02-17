@@ -5,6 +5,7 @@ import 'commons/resources/assets.dart';
 import 'commons/resources/colors.dart';
 import 'commons/resources/dimens.dart';
 import 'commons/resources/strings.dart';
+import 'commons/resources/styles.dart';
 import 'features/home_screen/home_screen.dart';
 import 'features/social_screen/social_screen.dart';
 import 'features/website_screen/website_screen.dart';
@@ -30,18 +31,6 @@ class MainScreenState extends State<MainScreen> {
       _selectedIndex = index;
     });
   }
-
-  TextStyle selectedLabelStyle = TextStyle(
-    color: AppColors.selectedTextColor,
-    fontWeight: FontWeight.w500,
-    fontSize: AppDimens.fontSize14,
-  );
-
-  TextStyle unselectedLabelStyle = TextStyle(
-    color: AppColors.unselectedTextColor,
-    fontWeight: FontWeight.w500,
-    fontSize: AppDimens.fontSize14,
-  );
 
   ColorFilter? colorFilter(bool value) {
     return ColorFilter.mode(
@@ -100,8 +89,8 @@ class MainScreenState extends State<MainScreen> {
                       ],
                       currentIndex: _selectedIndex,
                       backgroundColor: AppColors.cardBackgroundColor,
-                      selectedLabelStyle: selectedLabelStyle,
-                      unselectedLabelStyle: unselectedLabelStyle,
+                      selectedLabelStyle: AppStyles.selectedBottomNavigatorTextStyle,
+                      unselectedLabelStyle: AppStyles.unselectedBottomNavigatorTextStyle,
                       useLegacyColorScheme: false,
                       onTap: _onItemTapped,
                     ),
