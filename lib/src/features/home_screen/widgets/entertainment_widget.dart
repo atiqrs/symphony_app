@@ -29,7 +29,7 @@ class EntertainmentWidget extends StatelessWidget {
           height: AppDimens.height128,
           width: double.infinity,
           borderRadius: AppDimens.radius16,
-          fit: BoxFit.cover,
+          fit: BoxFit.fill,
           showBorder: false,
         ),
       ],
