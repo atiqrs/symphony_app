@@ -26,12 +26,14 @@ class EWarrantyCardWidget extends StatelessWidget {
         ClipRRect(
           borderRadius: BorderRadius.circular(AppDimens.radius12),
           child: Container(
-            padding: EdgeInsets.symmetric(vertical: AppDimens.spacing12, horizontal: AppDimens.spacing16),
+            padding: EdgeInsets.symmetric(vertical: AppDimens.spacing12),
             height: AppDimens.height92,
             width: double.infinity,
             color: AppColors.cardSecondaryBackgroundColor,
             child: Row(
               children: [
+                SizedBox(width: AppDimens.spacing16),
+
                 /// mobile image + circle camera box + device model name
                 Stack(
                   children: [
@@ -99,7 +101,11 @@ class EWarrantyCardWidget extends StatelessWidget {
                     // TODO: go to e-warranty next page implementation
                   },
                   icon: Center(
-                    child: SvgPicture.asset(AppAssets.iconArrowRightBack),
+                    child: SvgPicture.asset(
+                      AppAssets.iconArrowRightBack,
+                      height: AppDimens.height11,
+                      width: AppDimens.width12,
+                    ),
                   ),
                 )
               ],
