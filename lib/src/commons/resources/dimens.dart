@@ -24,6 +24,7 @@ class AppDimens {
   static const iconSize32 = 32.0;
   static const iconSize48 = 48.0;
 
+  static const height11 = 11.0;
   static const height40 = 40.0;
   static const height44 = 44.0;
   static const height90 = 90.0;
@@ -43,6 +44,8 @@ class AppDimens {
   static const height190 = 190.0;
   static const height200 = 200.0;
 
+  static const width2 = 2.0;
+  static const width12 = 12.0;
   static const width40 = 40.0;
   static const width44 = 44.0;
   static const width90 = 90.0;

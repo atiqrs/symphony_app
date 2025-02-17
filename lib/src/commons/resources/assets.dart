@@ -34,6 +34,11 @@ class AppAssets {
   static const imageTypeC = '${_pathImages}type-c.png';
   static const imageEntertainOne = '${_pathImages}entertain_one.png';
 
+  static const imageGameOne = '${_pathImages}game_one.png';
+  static const imageGameTwo = '${_pathImages}game_two.png';
+  static const imageGameThree = '${_pathImages}game_three.png';
+  static const imageCommunityBackground = '${_pathImages}community_background.png';
+
   /// GIF
   static const gifDemo = '${_pathGif}demo.gif';
 }

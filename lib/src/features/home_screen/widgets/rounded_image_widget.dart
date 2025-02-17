@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:symphony_app/src/commons/resources/colors.dart';
+
+import '../../../commons/resources/colors.dart';
 
 class BorderedImageWidget extends StatelessWidget {
   final String imageUrl;
@@ -7,6 +8,7 @@ class BorderedImageWidget extends StatelessWidget {
   final double? height;
   final double? width;
   final BoxFit? fit;
+  final Color borderColor;
   final double borderWidth;
   final bool showBorder;
 
@@ -17,6 +19,7 @@ class BorderedImageWidget extends StatelessWidget {
     this.height,
     this.width,
     this.fit,
+    this.borderColor = AppColors.borderLightColor,
     this.borderWidth = 0.5,
     this.showBorder = true,
   });
@@ -51,7 +54,7 @@ class BorderedImageWidget extends StatelessWidget {
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(borderRadius),
                 border: Border.all(
-                  color: AppColors.borderLightColor,
+                  color: borderColor,
                   width: borderWidth,
                 ),
               ),
