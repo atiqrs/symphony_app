@@ -12,9 +12,8 @@ class AppAssets {
 
   static const iconArrowBack = '${_pathIcons}arrow-back.svg';
   static const iconArrowRightBack = '${_pathIcons}arrow_right_back.svg';
-  static const iconBatteryFull = '${_pathIcons}battery-full.svg';
   static const iconCellularNetwork = '${_pathIcons}cellular-network.svg';
-  static const iconChip = '${_pathIcons}chip.svg';
+  static const iconRam = '${_pathIcons}ram.svg';
   static const iconCpu = '${_pathIcons}cpu.svg';
   static const iconDirection = '${_pathIcons}direction.svg';
   static const iconFingerprint = '${_pathIcons}finger-access.svg';
@@ -27,6 +26,11 @@ class AppAssets {
   static const iconPattern = '${_pathIcons}pattern.svg';
   static const iconMobile = '${_pathIcons}mobile.svg';
 
+  static const iconBattery = '${_pathIcons}battery.svg';
+  static const iconCamera = '${_pathIcons}camera.svg';
+  static const iconStorage = '${_pathIcons}storage.svg';
+  static const iconExtendableSquare = '${_pathIcons}square-arrow.svg';
+
   /// Images
   static const imagePhoneSpec = '${_pathImages}phone-spec.png';
   static const imagePhone = '${_pathImages}phone.png';
@@ -38,6 +42,9 @@ class AppAssets {
   static const imageGameTwo = '${_pathImages}game_two.png';
   static const imageGameThree = '${_pathImages}game_three.png';
   static const imageCommunityBackground = '${_pathImages}community_background.png';
+
+  static const imageAndroid = '${_pathImages}android.png';
+
 
   /// GIF
   static const gifDemo = '${_pathGif}demo.gif';

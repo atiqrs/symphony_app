@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
+import '../../app_router.dart';
 import '../../commons/resources/styles.dart';
 import '../../commons/resources/assets.dart';
 import '../../commons/resources/colors.dart';
@@ -30,7 +31,7 @@ class _HomeScreenState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: AppColors.blackBackgroundColor,
+      backgroundColor: AppColors.whiteBackgroundColor,
       body: SingleChildScrollView(
         child: Container(
           color: AppColors.whiteBackgroundColor,
@@ -59,13 +60,16 @@ class _HomeScreenState extends State<HomeScreen> {
               SizedBox(height: AppDimens.spacing16),
 
               /// feature image specification
-              BorderedImageWidget(
-                imageUrl: AppAssets.imagePhoneSpec,
-                height: AppDimens.height160,
-                width: double.infinity,
-                borderRadius: AppDimens.radius16,
-                borderWidth: AppDimens.spacing1,
-                fit: BoxFit.fill,
+              InkWell(
+                onTap: () => Navigator.pushNamed(context, AppRouter.specificationScreen),
+                child: BorderedImageWidget(
+                  imageUrl: AppAssets.imagePhoneSpec,
+                  height: AppDimens.height160,
+                  width: double.infinity,
+                  borderRadius: AppDimens.radius16,
+                  borderWidth: AppDimens.spacing1,
+                  fit: BoxFit.fill,
+                ),
               ),
               SizedBox(height: AppDimens.spacing24),
 

@@ -16,6 +16,7 @@ class AppColors {
   static const whiteColor = Color.fromRGBO(255, 255, 255, 1);
   static const redColor = Color.fromRGBO(255, 44, 44, 1);
   static const redDimColor = Color.fromRGBO(255, 44, 44, .15);
+  static const orangeColor = Color.fromRGBO(255, 105, 0, 1);
 
   static Color selectedIconRedColor = Color.fromRGBO(255, 0, 43, 1);
   static const unselectedIconColor = Color.fromRGBO(255, 255, 255, 0.4);
@@ -24,9 +25,15 @@ class AppColors {
   static const blackTextColor = Color.fromRGBO(0, 0, 0, 1);
   static const blackSecondaryTextColor = Color.fromRGBO(26, 26, 26, 1);
   static const whiteTextColor = Color.fromRGBO(255, 255, 255, 1);
+  static const liteWhiteTextColor = Color.fromRGBO(255, 255, 255, .8);
+  static const halfWhiteTextColor = Color.fromRGBO(255, 255, 255, .5);
   static const selectedTextColor = Color.fromRGBO(255, 255, 255, 1);
   static Color unselectedTextColor = Color.fromRGBO(255, 255, 255, 0.4);
   static Color grayTextColor = Color.fromRGBO(255, 255, 255, 0.6);
+  static Color greenTextColor = Color.fromRGBO(52, 168, 83, 1);
 
   static const testBackground = Color.fromRGBO(36, 122, 18, 1.0);
+
+  // color filters
+  static showColorFilter(Color color) => ColorFilter.mode(color, BlendMode.srcIn);
 }
