@@ -26,7 +26,6 @@ Widget specificationSingleCardWidget({
             svgUrl,
             height: AppDimens.height32,
             width: AppDimens.width32,
-            // color: AppColors.orangeColor,
           ),
           SizedBox(height: AppDimens.spacing16),
           Row(

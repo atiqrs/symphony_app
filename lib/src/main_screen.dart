@@ -52,7 +52,7 @@ class MainScreenState extends State<MainScreen> {
                 left: AppDimens.position0,
                 right: AppDimens.position0,
                 child: Container(
-                  height: AppDimens.height100,
+                  height: AppDimens.height98,
                   decoration: BoxDecoration(
                     color: AppColors.lowLiteBlackColor,
                     borderRadius: BorderRadius.only(

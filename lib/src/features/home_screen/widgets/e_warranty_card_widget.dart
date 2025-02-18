@@ -20,7 +20,7 @@ class EWarrantyCardWidget extends StatelessWidget {
       children: [
         Text(
           AppStrings.eWarrantyCardItemsText,
-          style: AppStyles.black20BoldTextStyle,
+          style: AppStyles.white20BoldTextStyle,
         ),
         SizedBox(height: AppDimens.spacing16),
         ClipRRect(

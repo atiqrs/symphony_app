@@ -38,6 +38,8 @@ class AppDimens {
   static const height82 = 82.0;
   static const height90 = 90.0;
   static const height92 = 92.0;
+  static const height96 = 96.0;
+  static const height98 = 98.0;
   static const height100 = 100.0;
   static const height102 = 102.0;
   static const height110 = 110.0;
