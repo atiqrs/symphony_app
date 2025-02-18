@@ -60,16 +60,13 @@ class _HomeScreenState extends State<HomeScreen> {
               SizedBox(height: AppDimens.spacing16),
 
               /// feature image specification
-              InkWell(
-                onTap: () => Navigator.pushNamed(context, AppRouter.specificationScreen),
-                child: BorderedImageWidget(
-                  imageUrl: AppAssets.imagePhoneSpec,
-                  height: AppDimens.height160,
-                  width: double.infinity,
-                  borderRadius: AppDimens.radius16,
-                  borderWidth: AppDimens.spacing1,
-                  fit: BoxFit.fill,
-                ),
+              BorderedImageWidget(
+                imageUrl: AppAssets.imagePhoneSpec,
+                height: AppDimens.height160,
+                width: double.infinity,
+                borderRadius: AppDimens.radius16,
+                borderWidth: AppDimens.spacing1,
+                fit: BoxFit.fill,
               ),
               SizedBox(height: AppDimens.spacing24),
 
@@ -78,9 +75,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 widget: ClipRRect(
                   borderRadius: BorderRadius.circular(AppDimens.radius8),
                   child: InkWell(
-                    onTap: () {
-                      // TODO: Handle tap event of check support button
-                    },
+                    onTap: () => Navigator.pushNamed(context, AppRouter.supportScreen),
                     child: Container(
                       width: AppDimens.height140,
                       height: AppDimens.height40,

@@ -15,6 +15,7 @@ class AppDimens {
   static const spacing24 = 24.0;
   static const spacing100 = 100.0;
 
+  static const range2 = 2;
   static const range3 = 3;
 
   static const size3 = 3.0;
@@ -40,6 +41,7 @@ class AppDimens {
   static const height100 = 100.0;
   static const height102 = 102.0;
   static const height110 = 110.0;
+  static const height118 = 118.0;
   static const height120 = 120.0;
   static const height126 = 126.0;
   static const height128 = 128.0;
