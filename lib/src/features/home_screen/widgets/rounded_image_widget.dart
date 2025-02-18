@@ -19,7 +19,7 @@ class BorderedImageWidget extends StatelessWidget {
     this.height,
     this.width,
     this.fit,
-    this.borderColor = AppColors.borderLightColor,
+    this.borderColor = AppColors.liteGrayColor,
     this.borderWidth = 0.5,
     this.showBorder = true,
   });

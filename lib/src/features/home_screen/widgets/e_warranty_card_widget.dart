@@ -29,7 +29,7 @@ class EWarrantyCardWidget extends StatelessWidget {
             padding: EdgeInsets.symmetric(vertical: AppDimens.spacing12),
             height: AppDimens.height92,
             width: double.infinity,
-            color: AppColors.cardSecondaryBackgroundColor,
+            color: AppColors.liteBlackThirdColor,
             child: Row(
               children: [
                 SizedBox(width: AppDimens.spacing16),
@@ -47,10 +47,10 @@ class EWarrantyCardWidget extends StatelessWidget {
                           height: AppDimens.size3,
                           width: AppDimens.size3,
                           decoration: BoxDecoration(
-                            color: AppColors.cardSecondaryBackgroundColor,
+                            color: AppColors.liteBlackThirdColor,
                             borderRadius: BorderRadius.circular(AppDimens.radius10),
                             border:
-                                Border.all(color: AppColors.cardSecondaryBackgroundColor, width: AppDimens.spacing1),
+                                Border.all(color: AppColors.liteBlackThirdColor, width: AppDimens.spacing1),
                           ),
                         ),
                       ),

@@ -17,15 +17,15 @@ class SpecificationScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: AppColors.blackBackgroundColor,
+      backgroundColor: AppColors.blackColor,
       appBar: CustomAppBar(
         title: Text(AppStrings.specification),
         titleTextStyle: AppStyles.white20W600TextStyle,
-        backgroundColor: AppColors.blackBackgroundColor,
+        backgroundColor: AppColors.blackColor,
       ),
       body: SingleChildScrollView(
         child: Container(
-          color: AppColors.blackBackgroundColor,
+          color: AppColors.blackColor,
           padding: EdgeInsets.symmetric(horizontal: AppDimens.spacing16, vertical: AppDimens.spacing24),
           child: Column(
             children: [

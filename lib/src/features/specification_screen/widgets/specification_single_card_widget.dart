@@ -16,7 +16,7 @@ Widget specificationSingleCardWidget({
   return colorRoundCardWidget(
     width: double.infinity,
     radius: AppDimens.radius16,
-    backgroundColor: AppColors.cardBackgroundColor,
+    backgroundColor: AppColors.liteBlackFirstColor,
     overlayWidget: Padding(
       padding: EdgeInsets.symmetric(horizontal: AppDimens.spacing16, vertical: AppDimens.spacing24),
       child: Column(

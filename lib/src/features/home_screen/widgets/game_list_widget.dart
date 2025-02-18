@@ -70,7 +70,7 @@ class GamingItemsWidget extends StatelessWidget {
                       borderRadius: AppDimens.radius10,
                       fit: BoxFit.cover,
                       borderWidth: AppDimens.width2,
-                      borderColor: AppColors.borderWhiteColor,
+                      borderColor: AppColors.lowLiteWhite100Color,
                     ),
                   ),
                   SizedBox(width: AppDimens.spacing14),

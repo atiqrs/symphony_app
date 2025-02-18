@@ -12,7 +12,7 @@ Widget poweredByWidget({required int androidVersion}) {
     height: AppDimens.height82,
     width: double.infinity,
     radius: AppDimens.radius16,
-    backgroundColor: AppColors.cardBackgroundColor,
+    backgroundColor: AppColors.liteBlackFirstColor,
     overlayWidget: Padding(
       padding: EdgeInsets.symmetric(horizontal: AppDimens.spacing16),
       child: Row(

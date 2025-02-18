@@ -15,7 +15,7 @@ Widget portraitTrendingCard({required TrendingItemModel item}) {
           width: AppDimens.width104,
           decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(AppDimens.radius10),
-            border: Border.all(color: AppColors.borderWhiteColor, width: AppDimens.spacing1),
+            border: Border.all(color: AppColors.lowLiteWhite100Color, width: AppDimens.spacing1),
           ),
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
