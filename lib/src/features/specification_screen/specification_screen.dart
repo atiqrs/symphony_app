@@ -57,7 +57,7 @@ class SpecificationScreen extends StatelessWidget {
               specificationSingleCardWidget(
                 svgUrl: AppAssets.iconExtendableSquare,
                 category: AppStrings.displayText,
-                detailsData: AppStrings.storageDetailsText,
+                detailsData: AppStrings.displayDetailsText,
               ),
               SizedBox(height: AppDimens.spacing16),
               IntrinsicHeight(
