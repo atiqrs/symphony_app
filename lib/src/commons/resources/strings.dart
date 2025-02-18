@@ -46,6 +46,8 @@ class AppStrings {
 
   static const serviceTracking = "Service Tracking";
   static const enterLSO = "Enter LSO";
+  static const enterLSOHints = "eg : PAN-00950100";
+  static const getInformation = "Get Information";
 
 
 
