@@ -166,13 +166,4 @@ abstract class AppStyles {
           borderRadius: BorderRadius.circular(AppDimens.radius8),
         ),
       );
-
-  /// input borders
-  static OutlineInputBorder transparentInputBorder() {
-    return const OutlineInputBorder(
-      borderSide: BorderSide(
-        color: Colors.transparent,
-      ),
-    );
-  }
 }

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../../../commons/resources/colors.dart';
+import '../../../commons/resources/dimens.dart';
 
 class BorderedImageWidget extends StatelessWidget {
   final String imageUrl;
@@ -20,7 +21,7 @@ class BorderedImageWidget extends StatelessWidget {
     this.width,
     this.fit,
     this.borderColor = AppColors.liteGrayColor,
-    this.borderWidth = 0.5,
+    this.borderWidth = AppDimens.width0_5,
     this.showBorder = true,
   });
 

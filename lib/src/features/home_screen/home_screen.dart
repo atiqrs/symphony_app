@@ -53,7 +53,7 @@ class _HomeScreenState extends State<HomeScreen> {
                     },
                     icon: SvgPicture.asset(
                       AppAssets.iconMenu,
-                      colorFilter: ColorFilter.mode(AppColors.blackColor, BlendMode.srcIn),
+                      colorFilter: AppColors.showColorFilter(AppColors.blackColor),
                     ),
                   ),
                 ],

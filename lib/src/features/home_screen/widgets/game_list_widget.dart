@@ -43,7 +43,7 @@ class GamingItemsWidget extends StatelessWidget {
                     AppAssets.iconArrowRightBack,
                     height: AppDimens.height11,
                     width: AppDimens.width12,
-                    colorFilter: ColorFilter.mode(AppColors.redColor, BlendMode.srcIn),
+                    colorFilter: AppColors.showColorFilter(AppColors.redColor),
                   ),
                 ],
               ),

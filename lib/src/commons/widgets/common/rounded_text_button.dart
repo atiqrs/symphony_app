@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import '../../resources/dimens.dart';
 import '../../resources/styles.dart';
 
 enum CustomButtonStyle {
@@ -43,7 +44,7 @@ class RoundedTextButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: padding ?? const EdgeInsets.all(0),
+      padding: padding ?? const EdgeInsets.all(AppDimens.spacing0),
       child: Opacity(
         opacity: enabled ? 1 : 0.4,
         child: TextButton(

@@ -55,6 +55,7 @@ class AppDimens {
   static const height190 = 190.0;
   static const height200 = 200.0;
 
+  static const width0_5 = 0.5;
   static const width1_5 = 1.5;
   static const width2 = 2.0;
   static const width4 = 4.0;

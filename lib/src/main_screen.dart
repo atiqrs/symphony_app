@@ -33,10 +33,7 @@ class MainScreenState extends State<MainScreen> {
   }
 
   ColorFilter? colorFilter(bool value) {
-    return ColorFilter.mode(
-      value ? AppColors.glazeRedColor : AppColors.liteWhite40Color,
-      BlendMode.srcIn,
-    );
+    return AppColors.showColorFilter(value ? AppColors.glazeRedColor : AppColors.liteWhite40Color);
   }
 
   @override
