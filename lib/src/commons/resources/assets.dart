@@ -29,12 +29,12 @@ class AppAssets {
   static const iconStorage = '${_pathIcons}storage.svg';
   static const iconExtendableSquare = '${_pathIcons}square_arrow.svg';
 
-  static const iconAppointment = '$_pathIcons/support/appointment.svg';
-  static const iconComment = '$_pathIcons/support/comment.svg';
-  static const iconCourtLow = '$_pathIcons/support/court_law.svg';
-  static const iconCustomerSupport = '$_pathIcons/support/customer_support.svg';
-  static const iconPowerService = '$_pathIcons/support/power_service.svg';
-  static const iconList = '$_pathIcons/support/list.svg';
+  static const iconAppointment = '${_pathIcons}support/appointment.svg';
+  static const iconComment = '${_pathIcons}support/comment.svg';
+  static const iconCourtLow = '${_pathIcons}support/court_law.svg';
+  static const iconCustomerSupport = '${_pathIcons}support/customer_support.svg';
+  static const iconPowerService = '${_pathIcons}support/power_service.svg';
+  static const iconList = '${_pathIcons}support/list.svg';
 
   /// Images
   static const imagePhoneSpec = '${_pathImages}phone_spec.png';
