@@ -31,13 +31,13 @@ class _LsoQueryScreenState extends State<LsoQueryScreen> {
       body: SingleChildScrollView(
         child: Container(
           color: AppColors.blackBackgroundColor,
-          padding: EdgeInsets.symmetric(vertical: AppDimens.spacing24, horizontal: AppDimens.spacing16),
+          padding: EdgeInsets.all(AppDimens.spacing16),
           child: colorRoundCardWidget(
             width: double.infinity,
             radius: AppDimens.radius16,
             backgroundColor: AppColors.cardBackgroundColor,
             overlayWidget: Padding(
-              padding: EdgeInsets.all(AppDimens.spacing16),
+              padding: EdgeInsets.symmetric(horizontal: AppDimens.spacing16, vertical: AppDimens.spacing24),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
@@ -57,6 +57,7 @@ class _LsoQueryScreenState extends State<LsoQueryScreen> {
                     focusNode: lsoFocusNode,
                     controller: lsoController,
                     onChanged: (value) {},
+                    cursorColor: AppColors.halfWhiteTextColor,
                     decoration: InputDecoration(
                       hintText: AppStrings.enterLSOHints,
                       hintStyle: AppStyles.gray14W500TextStyle,
