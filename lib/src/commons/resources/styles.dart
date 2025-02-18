@@ -155,6 +155,18 @@ abstract class AppStyles {
         ),
       );
 
+  static ButtonStyle whiteBigButtonStyle(TextStyle style) => TextButton.styleFrom(
+        foregroundColor: AppColors.redDimColor,
+        padding: EdgeInsets.zero,
+        minimumSize: Size.zero,
+        tapTargetSize: MaterialTapTargetSize.shrinkWrap,
+        backgroundColor: AppColors.whiteColor,
+        textStyle: style,
+        shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.circular(AppDimens.radius8),
+        ),
+      );
+
   /// input borders
   static OutlineInputBorder transparentInputBorder() {
     return const OutlineInputBorder(

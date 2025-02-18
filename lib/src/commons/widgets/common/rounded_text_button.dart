@@ -15,6 +15,9 @@ extension GetCustomButtonStyles on CustomButtonStyle {
       case CustomButtonStyle.redBig:
         return AppStyles.redBigButtonStyle(AppStyles.white16W500TextStyle);
 
+      case CustomButtonStyle.whiteBig:
+        return AppStyles.whiteBigButtonStyle(AppStyles.white16W500TextStyle);
+
       default:
         return AppStyles.redBigButtonStyle(AppStyles.white20W600TextStyle);
     }
