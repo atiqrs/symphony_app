@@ -17,7 +17,7 @@ Widget supportSingleCardWidget({
       height: AppDimens.height118,
       width: double.infinity,
       radius: AppDimens.radius16,
-      backgroundColor: AppColors.cardBackgroundColor,
+      backgroundColor: AppColors.liteBlackFirstColor,
       overlayWidget: Padding(
         padding: EdgeInsets.all(AppDimens.spacing16),
         child: Column(

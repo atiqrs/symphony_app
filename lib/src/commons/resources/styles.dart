@@ -24,72 +24,72 @@ abstract class AppStyles {
   static const fontName = 'Font-Name';
 
   static TextStyle gray12TextStyle = TextStyle(
-    color: AppColors.lightWhite06TextColor,
+    color: AppColors.liteWhite60Color,
     fontSize: textSize12,
   );
 
   static TextStyle gray14W500TextStyle = TextStyle(
-    color: AppColors.grayTextColor,
+    color: AppColors.grayColor,
     fontWeight: FontWeight.w500,
     fontSize: textSize14,
   );
 
   static TextStyle gray16W500TextStyle = TextStyle(
-    color: AppColors.grayTextColor,
+    color: AppColors.grayColor,
     fontWeight: FontWeight.w500,
     fontSize: textSize16,
   );
 
   static TextStyle green20W500TextStyle = TextStyle(
-    color: AppColors.greenTextColor,
+    color: AppColors.greenColor,
     fontWeight: FontWeight.w500,
     fontSize: textSize20,
   );
 
   static TextStyle liteWhite12W500TextStyle = TextStyle(
-    color: AppColors.liteWhiteTextColor,
+    color: AppColors.liteWhite80Color,
     fontSize: textSize12,
     fontWeight: FontWeight.w500,
   );
 
   static TextStyle halfWhite12W500TextStyle = TextStyle(
-    color: AppColors.halfWhiteTextColor,
+    color: AppColors.liteWhite50Color,
     fontSize: textSize12,
     fontWeight: FontWeight.w500,
   );
 
   static TextStyle white12W700TextStyle = TextStyle(
-    color: AppColors.whiteTextColor,
+    color: AppColors.whiteColor,
     fontSize: textSize12,
     fontWeight: FontWeight.w700,
   );
 
   static TextStyle white14W500TextStyle = TextStyle(
-    color: AppColors.whiteTextColor,
+    color: AppColors.whiteColor,
     fontSize: textSize14,
     fontWeight: FontWeight.w500,
   );
 
   static TextStyle white16W500TextStyle = TextStyle(
-    color: AppColors.whiteTextColor,
+    color: AppColors.whiteColor,
     fontWeight: FontWeight.w500,
     fontSize: textSize16,
   );
 
   static TextStyle white18W700TextStyle = TextStyle(
-    color: AppColors.whiteTextColor,
+    color: AppColors.whiteColor,
     fontWeight: FontWeight.w700,
     fontSize: textSize18,
   );
 
   static TextStyle white20W600TextStyle = TextStyle(
-    color: AppColors.whiteTextColor,
+    color: AppColors.whiteColor,
     fontWeight: FontWeight.w600,
     fontSize: textSize20,
   );
 
   static TextStyle white16W600TextStyle = TextStyle(
-    color: AppColors.whiteTextColor,
+    color: AppColors.whiteColor,
     fontWeight: FontWeight.w600,
     fontSize: textSize16,
   );
@@ -97,13 +97,13 @@ abstract class AppStyles {
   static TextStyle white8W800TextStyle = TextStyle(
     fontSize: textSize8,
     fontWeight: FontWeight.w800,
-    color: AppColors.whiteTextColor,
+    color: AppColors.whiteColor,
   );
 
   static TextStyle black20BoldTextStyle = TextStyle(
     fontSize: textSize20,
     fontWeight: FontWeight.bold,
-    color: AppColors.blackTextColor,
+    color: AppColors.blackColor,
   );
 
   static TextStyle red14W700TextStyle = TextStyle(
@@ -113,31 +113,31 @@ abstract class AppStyles {
   );
 
   static TextStyle black18W700TextStyle = TextStyle(
-    color: AppColors.blackTextColor,
+    color: AppColors.blackColor,
     fontWeight: FontWeight.w700,
     fontSize: textSize18,
   );
 
   static TextStyle black16W500TextStyle = TextStyle(
-    color: AppColors.blackTextColor,
+    color: AppColors.blackColor,
     fontWeight: FontWeight.w500,
     fontSize: textSize16,
   );
 
   static TextStyle blackSecondary14W600TextStyle = TextStyle(
-    color: AppColors.blackSecondaryTextColor,
+    color: AppColors.liteBlackSecondColor,
     fontSize: textSize14,
     fontWeight: FontWeight.w600,
   );
 
   static TextStyle selectedBottomNavigatorTextStyle = TextStyle(
-    color: AppColors.selectedTextColor,
+    color: AppColors.whiteColor,
     fontWeight: FontWeight.w500,
     fontSize: textSize14,
   );
 
   static TextStyle unselectedBottomNavigatorTextStyle = TextStyle(
-    color: AppColors.unselectedTextColor,
+    color: AppColors.liteWhite40Color,
     fontWeight: FontWeight.w500,
     fontSize: textSize14,
   );
@@ -156,7 +156,7 @@ abstract class AppStyles {
       );
 
   static ButtonStyle whiteBigButtonStyle(TextStyle style) => TextButton.styleFrom(
-        foregroundColor: AppColors.redDimColor,
+        foregroundColor: AppColors.liteRed15Color,
         padding: EdgeInsets.zero,
         minimumSize: Size.zero,
         tapTargetSize: MaterialTapTargetSize.shrinkWrap,
@@ -166,13 +166,4 @@ abstract class AppStyles {
           borderRadius: BorderRadius.circular(AppDimens.radius8),
         ),
       );
-
-  /// input borders
-  static OutlineInputBorder transparentInputBorder() {
-    return const OutlineInputBorder(
-      borderSide: BorderSide(
-        color: Colors.transparent,
-      ),
-    );
-  }
 }

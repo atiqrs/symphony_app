@@ -22,20 +22,20 @@ class _LsoQueryScreenState extends State<LsoQueryScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: AppColors.blackBackgroundColor,
+      backgroundColor: AppColors.blackColor,
       appBar: CustomAppBar(
         title: Text(AppStrings.lsoQuery),
         titleTextStyle: AppStyles.white20W600TextStyle,
-        backgroundColor: AppColors.blackBackgroundColor,
+        backgroundColor: AppColors.blackColor,
       ),
       body: SingleChildScrollView(
         child: Container(
-          color: AppColors.blackBackgroundColor,
+          color: AppColors.blackColor,
           padding: EdgeInsets.all(AppDimens.spacing16),
           child: colorRoundCardWidget(
             width: double.infinity,
             radius: AppDimens.radius16,
-            backgroundColor: AppColors.cardBackgroundColor,
+            backgroundColor: AppColors.liteBlackFirstColor,
             overlayWidget: Padding(
               padding: EdgeInsets.symmetric(horizontal: AppDimens.spacing16, vertical: AppDimens.spacing24),
               child: Column(
@@ -57,16 +57,16 @@ class _LsoQueryScreenState extends State<LsoQueryScreen> {
                     focusNode: lsoFocusNode,
                     controller: lsoController,
                     onChanged: (value) {},
-                    cursorColor: AppColors.halfWhiteTextColor,
+                    cursorColor: AppColors.liteWhite50Color,
                     decoration: InputDecoration(
                       hintText: AppStrings.enterLSOHints,
                       hintStyle: AppStyles.gray14W500TextStyle,
                       enabledBorder: OutlineInputBorder(
-                        borderSide: BorderSide(color: AppColors.borderLightWhite02Color, width: AppDimens.width1_5),
+                        borderSide: BorderSide(color: AppColors.lowLiteWhite20Color, width: AppDimens.width1_5),
                         borderRadius: BorderRadius.all(Radius.circular(AppDimens.radius16)),
                       ),
                       focusedBorder: OutlineInputBorder(
-                        borderSide: BorderSide(color: AppColors.borderLightWhite02Color, width: AppDimens.width2),
+                        borderSide: BorderSide(color: AppColors.lowLiteWhite20Color, width: AppDimens.width2),
                         borderRadius: BorderRadius.all(Radius.circular(AppDimens.radius16)),
                       ),
                       contentPadding: EdgeInsets.all(AppDimens.spacing16),

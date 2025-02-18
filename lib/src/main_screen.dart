@@ -33,16 +33,13 @@ class MainScreenState extends State<MainScreen> {
   }
 
   ColorFilter? colorFilter(bool value) {
-    return ColorFilter.mode(
-      value ? AppColors.selectedIconRedColor : AppColors.unselectedIconColor,
-      BlendMode.srcIn,
-    );
+    return AppColors.showColorFilter(value ? AppColors.glazeRedColor : AppColors.liteWhite40Color);
   }
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: AppColors.whiteBackgroundColor,
+      backgroundColor: AppColors.whiteColor,
       body: SafeArea(
         child: SizedBox(
           height: double.infinity,
@@ -57,14 +54,14 @@ class MainScreenState extends State<MainScreen> {
                 child: Container(
                   height: AppDimens.height100,
                   decoration: BoxDecoration(
-                    color: AppColors.borderColor,
+                    color: AppColors.lowLiteBlackColor,
                     borderRadius: BorderRadius.only(
                       topLeft: Radius.circular(AppDimens.radius32),
                       topRight: Radius.circular(AppDimens.radius32),
                     ),
                     border: Border.all(
                       width: AppDimens.spacing2,
-                      color: AppColors.borderColor,
+                      color: AppColors.lowLiteBlackColor,
                     ),
                   ),
                   child: ClipRRect(
@@ -88,7 +85,7 @@ class MainScreenState extends State<MainScreen> {
                         ),
                       ],
                       currentIndex: _selectedIndex,
-                      backgroundColor: AppColors.cardBackgroundColor,
+                      backgroundColor: AppColors.liteBlackFirstColor,
                       selectedLabelStyle: AppStyles.selectedBottomNavigatorTextStyle,
                       unselectedLabelStyle: AppStyles.unselectedBottomNavigatorTextStyle,
                       useLegacyColorScheme: false,

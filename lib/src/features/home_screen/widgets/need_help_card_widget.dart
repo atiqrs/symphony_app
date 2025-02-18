@@ -35,7 +35,7 @@ class NeedHelpCardWidget extends StatelessWidget {
                 SvgPicture.asset(
                   AppAssets.iconHeadphone,
                   height: AppDimens.height44,
-                  colorFilter: ColorFilter.mode(AppColors.whiteColor, BlendMode.srcIn),
+                  colorFilter: AppColors.showColorFilter(AppColors.whiteColor),
                 ),
                 SizedBox(width: AppDimens.spacing16),
                 Text(
