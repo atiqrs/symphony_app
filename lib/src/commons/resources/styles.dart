@@ -27,10 +27,35 @@ abstract class AppStyles {
     color: AppColors.grayTextColor,
     fontSize: textSize12,
   );
+
+  static TextStyle green20W500TextStyle = TextStyle(
+    color: AppColors.greenTextColor,
+    fontWeight: FontWeight.w500,
+    fontSize: textSize20,
+  );
+
+  static TextStyle liteWhite12W500TextStyle = TextStyle(
+    color: AppColors.liteWhiteTextColor,
+    fontSize: textSize12,
+    fontWeight: FontWeight.w500,
+  );
+
+  static TextStyle halfWhite12W500TextStyle = TextStyle(
+    color: AppColors.halfWhiteTextColor,
+    fontSize: textSize12,
+    fontWeight: FontWeight.w500,
+  );
+
   static TextStyle white12W700TextStyle = TextStyle(
     color: AppColors.whiteTextColor,
     fontSize: textSize12,
     fontWeight: FontWeight.w700,
+  );
+
+  static TextStyle white14W500TextStyle = TextStyle(
+    color: AppColors.whiteTextColor,
+    fontSize: textSize14,
+    fontWeight: FontWeight.w500,
   );
 
   static TextStyle white16W500TextStyle = TextStyle(

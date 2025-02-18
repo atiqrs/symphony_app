@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
+import 'features/specification_screen/specification_screen.dart';
 import 'main_screen.dart';
 
 class AppRouter {
   /// Route names
   static const String mainScreen = 'mainScreen';
+  static const String specificationScreen = 'specificationScreen';
 
   static Route<dynamic> onGenerateRoute(RouteSettings settings) {
     final uri = Uri.parse(settings.name!);
@@ -14,6 +16,9 @@ class AppRouter {
     switch (name) {
       case AppRouter.mainScreen:
         page = const MainScreen();
+        break;
+      case AppRouter.specificationScreen:
+        page = const SpecificationScreen();
         break;
       default:
         page = const MainScreen();
