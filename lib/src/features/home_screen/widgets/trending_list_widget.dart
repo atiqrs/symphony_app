@@ -19,12 +19,12 @@ class TrendingItemsWidget extends StatelessWidget {
       children: [
         Text(
           AppStrings.trendingItemsText,
-          style: AppStyles.black20BoldTextStyle,
+          style: AppStyles.white20BoldTextStyle,
         ),
         SizedBox(height: AppDimens.spacing16),
         Container(
           height: AppDimens.height126,
-          color: AppColors.whiteColor,
+          color: AppColors.blackColor,
           child: ListView.builder(
             scrollDirection: Axis.horizontal,
             itemCount: trendingModel.items.length,

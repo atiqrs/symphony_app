@@ -100,6 +100,12 @@ abstract class AppStyles {
     color: AppColors.whiteColor,
   );
 
+  static TextStyle white20BoldTextStyle = TextStyle(
+    fontSize: textSize20,
+    fontWeight: FontWeight.bold,
+    color: AppColors.whiteColor,
+  );
+
   static TextStyle black20BoldTextStyle = TextStyle(
     fontSize: textSize20,
     fontWeight: FontWeight.bold,

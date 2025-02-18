@@ -17,7 +17,7 @@ class EntertainmentWidget extends StatelessWidget {
       children: [
         Text(
           AppStrings.entertainmentItemsText,
-          style: AppStyles.black20BoldTextStyle,
+          style: AppStyles.white20BoldTextStyle,
         ),
         SizedBox(height: AppDimens.spacing16),
         BorderedImageWidget(

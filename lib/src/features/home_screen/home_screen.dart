@@ -35,7 +35,7 @@ class _HomeScreenState extends State<HomeScreen> {
       backgroundColor: AppColors.whiteColor,
       body: SingleChildScrollView(
         child: Container(
-          color: AppColors.whiteColor,
+          color: AppColors.blackColor,
           padding: EdgeInsets.symmetric(horizontal: AppDimens.spacing16, vertical: AppDimens.spacing24),
           child: Column(
             children: [
@@ -45,7 +45,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 children: [
                   Text(
                     AppStrings.homeTitle,
-                    style: AppStyles.black18W700TextStyle,
+                    style: AppStyles.white18W700TextStyle,
                   ),
                   IconButton(
                     onPressed: () {
@@ -53,7 +53,7 @@ class _HomeScreenState extends State<HomeScreen> {
                     },
                     icon: SvgPicture.asset(
                       AppAssets.iconMenu,
-                      colorFilter: AppColors.showColorFilter(AppColors.blackColor),
+                      colorFilter: AppColors.showColorFilter(AppColors.whiteColor),
                     ),
                   ),
                 ],
