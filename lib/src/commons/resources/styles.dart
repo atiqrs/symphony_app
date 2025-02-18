@@ -24,8 +24,20 @@ abstract class AppStyles {
   static const fontName = 'Font-Name';
 
   static TextStyle gray12TextStyle = TextStyle(
-    color: AppColors.grayTextColor,
+    color: AppColors.lightWhite06TextColor,
     fontSize: textSize12,
+  );
+
+  static TextStyle gray14W500TextStyle = TextStyle(
+    color: AppColors.grayTextColor,
+    fontWeight: FontWeight.w500,
+    fontSize: textSize14,
+  );
+
+  static TextStyle gray16W500TextStyle = TextStyle(
+    color: AppColors.grayTextColor,
+    fontWeight: FontWeight.w500,
+    fontSize: textSize16,
   );
 
   static TextStyle green20W500TextStyle = TextStyle(
@@ -61,6 +73,12 @@ abstract class AppStyles {
   static TextStyle white16W500TextStyle = TextStyle(
     color: AppColors.whiteTextColor,
     fontSize: textSize16,
+  );
+
+  static TextStyle white18W700TextStyle = TextStyle(
+    color: AppColors.whiteTextColor,
+    fontWeight: FontWeight.w700,
+    fontSize: textSize18,
   );
 
   static TextStyle white20W600TextStyle = TextStyle(

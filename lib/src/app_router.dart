@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'features/lso_query_screen/lso_query_screen.dart';
 import 'features/specification_screen/specification_screen.dart';
 import 'features/support_screen/support_screen.dart';
 import 'main_screen.dart';
@@ -8,6 +9,7 @@ class AppRouter {
   static const String mainScreen = 'mainScreen';
   static const String specificationScreen = 'specificationScreen';
   static const String supportScreen = 'supportScreen';
+  static const String lsoQueryScreen = 'lsoQueryScreen';
 
   static Route<dynamic> onGenerateRoute(RouteSettings settings) {
     final uri = Uri.parse(settings.name!);
@@ -24,6 +26,9 @@ class AppRouter {
         break;
       case AppRouter.supportScreen:
         page = const SupportScreen();
+        break;
+      case AppRouter.lsoQueryScreen:
+        page = const LsoQueryScreen();
         break;
       default:
         page = const MainScreen();

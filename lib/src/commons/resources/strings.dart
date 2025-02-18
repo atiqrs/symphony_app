@@ -42,16 +42,12 @@ class AppStrings {
   static const lsoQuery = "LSO Query";
   static const feedback = "Feedback";
   static const bookAnAppointment = "Book An Appointment";
-  // static const androidTmText = "Android™";
-  // static const processorText = "Processor";
-  // static const storageText = "Storage";
-  // static const displayText = "Display";
-  // static const ramText = "Ram";
-  // static const simCardText = "Sim Card";
-  // static const cameraText = "Camera";
-  // static const networkText = "Network";
-  // static const batteryText = "Battery";
-  // static const deviceSensorsText = "Device Sensors";
+
+
+  static const serviceTracking = "Service Tracking";
+  static const enterLSO = "Enter LSO";
+
+
 
   // Specification details data
   static const processDetailsText = "MediaTek Helio G99 6nm 2.2GHz Octa Core";
