@@ -51,6 +51,7 @@ class SupportScreen extends StatelessWidget {
                     child: supportSingleCardWidget(
                       iconUrl: AppAssets.iconCourtLow,
                       title: AppStrings.lsoQuery,
+                      onPressed: () => Navigator.pushNamed(context, AppRouter.lsoQueryScreen),
                     ),
                   ),
                   SizedBox(width: AppDimens.spacing16),

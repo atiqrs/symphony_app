@@ -7,6 +7,7 @@ import '../../commons/resources/assets.dart';
 import '../../commons/resources/colors.dart';
 import '../../commons/resources/dimens.dart';
 import '../../commons/resources/strings.dart';
+import '../../commons/widgets/common/rounded_text_button.dart';
 import '../../dev_utils/mock_data/mock_gaming_list_data.dart';
 import '../../dev_utils/mock_data/mock_trending_list_data.dart';
 import '../../dev_utils/mock_data/mock_warranty_data.dart';
@@ -72,18 +73,23 @@ class _HomeScreenState extends State<HomeScreen> {
 
               /// need help card & button
               NeedHelpCardWidget(
-                widget: ClipRRect(
-                  borderRadius: BorderRadius.circular(AppDimens.radius8),
-                  child: InkWell(
-                    onTap: () => Navigator.pushNamed(context, AppRouter.supportScreen),
-                    child: Container(
-                      width: AppDimens.height140,
-                      height: AppDimens.height40,
-                      color: AppColors.whiteColor,
-                      alignment: Alignment.center,
-                      child: Text(AppStrings.checkSupportText, style: AppStyles.black16W500TextStyle),
+                widget: Column(
+                  children: [
+                    Spacer(),
+                    RoundedTextButton(
+                      onPressed: () => Navigator.pushNamed(context, AppRouter.supportScreen),
+                      style: CustomButtonStyle.whiteBig,
+                      child: Padding(
+                        padding:
+                            const EdgeInsets.symmetric(horizontal: AppDimens.spacing16, vertical: AppDimens.spacing12),
+                        child: Text(
+                          AppStrings.checkSupportText,
+                          style: AppStyles.black16W500TextStyle,
+                        ),
+                      ),
                     ),
-                  ),
+                    Spacer(),
+                  ],
                 ),
               ),
               SizedBox(height: AppDimens.spacing24),
